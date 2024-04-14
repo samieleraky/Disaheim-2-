@@ -1,31 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace disaheim
+﻿namespace Pisaheim
 {
-    public class Amulet
+     public class Amulet
     {
-        // Private fields
         public string _itemId;
         public string _design;
-        public Level _quality; // Corrected the declaration of _quality
+        public Level _quality;
 
         // Constructors
-        public Amulet(string itemId)
-        {
-            _itemId = itemId;
-        }
-
-        public Amulet(string itemId, Level quality)
-        {
-            _itemId = itemId;
-            _quality = quality;
-        }
-
-        public Amulet(string itemId, Level quality, string design)
+        public Amulet(string itemId, Level quality = Level.medium, string design = "")
         {
             _itemId = itemId;
             _quality = quality;
@@ -54,7 +36,7 @@ namespace disaheim
         // ToString method override
         public override string ToString()
         {
-            return $"Amulet: ItemId - {_itemId}, Design - {_design}, Quality - {_quality}";
+            return $"ItemId: {_itemId}, Quality: {_quality}, Design: {_design}";
         }
     }
 }

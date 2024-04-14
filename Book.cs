@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace disaheim
+namespace Pisaheim
 {
     public class Book
     {
@@ -45,7 +45,8 @@ namespace disaheim
 
         public override string ToString()
         {
-            return $"Book: ItemId - {_ItemId}, Title - {_Title}, Price - {_price}";
+            return $"ItemId: {_ItemId}, Title: {_Title}, Price: {_price}";
+            //Assert.AreEqual("ItemId: 2, Title: Falling in Love with Yourself, Price: 0", b2.ToString());
         }
     }
 
